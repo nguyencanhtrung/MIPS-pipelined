@@ -1,0 +1,490 @@
+Release 14.7 - xst P.20131013 (lin)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Reading design: EX_phase.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "EX_phase.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "EX_phase"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : EX_phase
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/globalConst.vhd" into library work
+Parsing package <globalConst>.
+Parsing package body <globalConst>.
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/four_bits_CLA_adder.vhd" into library work
+Parsing entity <four_bits_CLA_adder>.
+Parsing architecture <Behavioral> of entity <four_bits_cla_adder>.
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/carry_look_ahead_block.vhd" into library work
+Parsing entity <carry_look_ahead_block>.
+Parsing architecture <Behavioral> of entity <carry_look_ahead_block>.
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/sixteen_bits_adder.vhd" into library work
+Parsing entity <sixteen_bits_adder>.
+Parsing architecture <Behavioral> of entity <sixteen_bits_adder>.
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/sixteen_bits_add_sub.vhd" into library work
+Parsing entity <sixteen_bits_add_sub>.
+Parsing architecture <Behavioral> of entity <sixteen_bits_add_sub>.
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/alu_Shift.vhd" into library work
+Parsing entity <alu_Shift>.
+Parsing architecture <Behavioral> of entity <alu_shift>.
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/alu_Logic.vhd" into library work
+Parsing entity <alu_Logic>.
+Parsing architecture <Behavioral> of entity <alu_logic>.
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/ALU_wrapper.vhd" into library work
+Parsing entity <ALU_wrapper>.
+Parsing architecture <Behavioral> of entity <alu_wrapper>.
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/EX_phase.vhd" into library work
+Parsing entity <EX_phase>.
+Parsing architecture <Behavioral> of entity <ex_phase>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <EX_phase> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <sixteen_bits_adder> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <four_bits_CLA_adder> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <carry_look_ahead_block> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ALU_wrapper> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <sixteen_bits_add_sub> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <alu_Logic> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <alu_Shift> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <EX_phase>.
+    Related source file is "/home/ctnguyen/Works/pipelineCPU/src/EX_phase.vhd".
+INFO:Xst:3210 - "/home/ctnguyen/Works/pipelineCPU/src/EX_phase.vhd" line 55: Output port <over_flow> of the instance <Br_addr_cal> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ctnguyen/Works/pipelineCPU/src/EX_phase.vhd" line 55: Output port <carry_out> of the instance <Br_addr_cal> is unconnected or connected to loadless signal.
+    Found 61-bit register for signal <EX_MEM_Reg>.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal branch_target_addr may hinder XST clustering optimizations.
+    Summary:
+	inferred  61 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <EX_phase> synthesized.
+
+Synthesizing Unit <sixteen_bits_adder>.
+    Related source file is "/home/ctnguyen/Works/pipelineCPU/src/sixteen_bits_adder.vhd".
+    Summary:
+	no macro.
+Unit <sixteen_bits_adder> synthesized.
+
+Synthesizing Unit <four_bits_CLA_adder>.
+    Related source file is "/home/ctnguyen/Works/pipelineCPU/src/four_bits_CLA_adder.vhd".
+    Summary:
+Unit <four_bits_CLA_adder> synthesized.
+
+Synthesizing Unit <carry_look_ahead_block>.
+    Related source file is "/home/ctnguyen/Works/pipelineCPU/src/carry_look_ahead_block.vhd".
+    Summary:
+	no macro.
+Unit <carry_look_ahead_block> synthesized.
+
+Synthesizing Unit <ALU_wrapper>.
+    Related source file is "/home/ctnguyen/Works/pipelineCPU/src/ALU_wrapper.vhd".
+INFO:Xst:3210 - "/home/ctnguyen/Works/pipelineCPU/src/ALU_wrapper.vhd" line 49: Output port <carry_out> of the instance <ALU_adder_subtracter> is unconnected or connected to loadless signal.
+    Found 8x2-bit Read Only RAM for signal <opLogic>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Multiplexer(s).
+Unit <ALU_wrapper> synthesized.
+
+Synthesizing Unit <sixteen_bits_add_sub>.
+    Related source file is "/home/ctnguyen/Works/pipelineCPU/src/sixteen_bits_add_sub.vhd".
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal result<15> may hinder XST clustering optimizations.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <sixteen_bits_add_sub> synthesized.
+
+Synthesizing Unit <alu_Logic>.
+    Related source file is "/home/ctnguyen/Works/pipelineCPU/src/alu_Logic.vhd".
+    Found 16-bit 4-to-1 multiplexer for signal <result> created at line 29.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <alu_Logic> synthesized.
+
+Synthesizing Unit <alu_Shift>.
+    Related source file is "/home/ctnguyen/Works/pipelineCPU/src/alu_Shift.vhd".
+WARNING:Xst:647 - Input <operand_b<5:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <operand_b<15:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit subtractor for signal <n0047> created at line 44.
+    Found 16-bit shifter logical right for signal <n0049[15:0]> created at line 44
+    Found 16-bit shifter logical left for signal <n0053[15:0]> created at line 43
+    Found 16-bit shifter logical left for signal <n0048[15:0]> created at line 44
+    Found 16-bit shifter logical right for signal <n0052[15:0]> created at line 43
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   7 Multiplexer(s).
+	inferred   4 Combinational logic shifter(s).
+Unit <alu_Shift> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x2-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 1
+ 32-bit subtractor                                     : 1
+# Registers                                            : 1
+ 61-bit register                                       : 1
+# Multiplexers                                         : 13
+ 16-bit 2-to-1 multiplexer                             : 11
+ 16-bit 4-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+# Logic shifters                                       : 4
+ 16-bit shifter logical left                           : 2
+ 16-bit shifter logical right                          : 2
+# Xors                                                 : 66
+ 1-bit xor2                                            : 65
+ 16-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <ALU_wrapper>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_opLogic> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 2-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <ALU_opcode>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <opLogic>       |          |
+    -----------------------------------------------------------------------
+Unit <ALU_wrapper> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x2-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 1
+ 32-bit subtractor                                     : 1
+# Registers                                            : 61
+ Flip-Flops                                            : 61
+# Multiplexers                                         : 13
+ 16-bit 2-to-1 multiplexer                             : 11
+ 16-bit 4-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+# Logic shifters                                       : 4
+ 16-bit shifter logical left                           : 2
+ 16-bit shifter logical right                          : 2
+# Xors                                                 : 66
+ 1-bit xor2                                            : 65
+ 16-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <EX_phase> ...
+
+Optimizing unit <sixteen_bits_adder> ...
+
+Optimizing unit <ALU_wrapper> ...
+
+Optimizing unit <sixteen_bits_add_sub> ...
+
+Optimizing unit <alu_Shift> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block EX_phase, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 61
+ Flip-Flops                                            : 61
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : EX_phase.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 286
+#      LUT2                        : 2
+#      LUT3                        : 29
+#      LUT4                        : 6
+#      LUT5                        : 109
+#      LUT6                        : 129
+#      MUXF7                       : 11
+# FlipFlops/Latches                : 61
+#      FDR                         : 61
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 142
+#      IBUF                        : 81
+#      OBUF                        : 61
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                  275  out of  63400     0%  
+    Number used as Logic:               275  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    275
+   Number with an unused Flip Flop:     275  out of    275   100%  
+   Number with an unused LUT:             0  out of    275     0%  
+   Number of fully used LUT-FF pairs:     0  out of    275     0%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                         143
+ Number of bonded IOBs:                 143  out of    210    68%  
+    IOB Flip Flops/Latches:              61
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 61    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 5.181ns
+   Maximum output required time after clock: 0.640ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 5716 / 122
+-------------------------------------------------------------------------
+Offset:              5.181ns (Levels of Logic = 11)
+  Source:            DEC_EX_Reg<71> (PAD)
+  Destination:       EX_MEM_Reg_35 (FF)
+  Destination Clock: clk rising
+
+  Data Path: DEC_EX_Reg<71> to EX_MEM_Reg_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            46   0.001   0.620  DEC_EX_Reg_71_IBUF (DEC_EX_Reg_71_IBUF)
+     LUT3:I0->O           21   0.097   0.647  ALU/opAddSub1 (ALU/opAddSub)
+     LUT5:I1->O            3   0.097   0.305  ALU/ALU_adder_subtracter/adder/first_4bits/c<2>1 (ALU/ALU_adder_subtracter/adder/first_4bits/c<2>)
+     LUT5:I4->O            3   0.097   0.305  ALU/ALU_adder_subtracter/adder/CLA_block/C_OUT<1> (ALU/ALU_adder_subtracter/adder/c_group<1>)
+     LUT6:I5->O            4   0.097   0.309  ALU/ALU_adder_subtracter/adder/second_4bits/c<2>1 (ALU/ALU_adder_subtracter/adder/second_4bits/c<2>)
+     LUT6:I5->O            4   0.097   0.309  ALU/ALU_adder_subtracter/adder/CLA_block/C_OUT<2> (ALU/ALU_adder_subtracter/adder/c_group<2>)
+     LUT6:I5->O            4   0.097   0.309  ALU/ALU_adder_subtracter/adder/third_4bits/c<2>1 (ALU/ALU_adder_subtracter/adder/third_4bits/c<2>)
+     LUT6:I5->O            4   0.097   0.309  ALU/ALU_adder_subtracter/adder/CLA_block/C_OUT<3> (ALU/ALU_adder_subtracter/adder/c_group<3>)
+     LUT6:I5->O            3   0.097   0.703  ALU/ALU_adder_subtracter/adder/fourth_4bits/c<2>1 (ALU/ALU_adder_subtracter/adder/fourth_4bits/c<2>)
+     LUT6:I0->O            2   0.097   0.383  ALU/ALU_adder_subtracter/adder/fourth_4bits/Mxor_sum<2>_xo<0>1 (ALU/resultAddSub<14>)
+     LUT6:I4->O            1   0.097   0.000  ALU/Mmux_ALU_result69 (alu_result<14>)
+     FDR:D                     0.008          EX_MEM_Reg_35
+    ----------------------------------------
+    Total                      5.181ns (0.979ns logic, 4.202ns route)
+                                       (18.9% logic, 81.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 61 / 61
+-------------------------------------------------------------------------
+Offset:              0.640ns (Levels of Logic = 1)
+  Source:            EX_MEM_Reg_60 (FF)
+  Destination:       EX_MEM_Reg<60> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: EX_MEM_Reg_60 to EX_MEM_Reg<60>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.361   0.279  EX_MEM_Reg_60 (EX_MEM_Reg_60)
+     OBUF:I->O                 0.000          EX_MEM_Reg_60_OBUF (EX_MEM_Reg<60>)
+    ----------------------------------------
+    Total                      0.640ns (0.361ns logic, 0.279ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 11.88 secs
+ 
+--> 
+
+
+Total memory usage is 202984 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

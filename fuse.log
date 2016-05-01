@@ -1,0 +1,36 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ctnguyen/Works/pipelineCPU/tb_ALU_wrapper_isim_beh.exe -prj /home/ctnguyen/Works/pipelineCPU/tb_ALU_wrapper_beh.prj work.tb_ALU_wrapper 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/four_bits_CLA_adder.vhd" into library work
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/carry_look_ahead_block.vhd" into library work
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/sixteen_bits_adder.vhd" into library work
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/globalConst.vhd" into library work
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/sixteen_bits_add_sub.vhd" into library work
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/alu_Shift.vhd" into library work
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/alu_Logic.vhd" into library work
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/ALU_wrapper.vhd" into library work
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/tb_ALU_wrapper.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 37788 KB
+Fuse CPU Usage: 1460 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package globalconst
+Compiling architecture behavioral of entity four_bits_CLA_adder [four_bits_cla_adder_default]
+Compiling architecture behavioral of entity carry_look_ahead_block [carry_look_ahead_block_default]
+Compiling architecture behavioral of entity sixteen_bits_adder [sixteen_bits_adder_default]
+Compiling architecture behavioral of entity sixteen_bits_add_sub [sixteen_bits_add_sub_default]
+Compiling architecture behavioral of entity alu_Logic [alu_logic_default]
+Compiling architecture behavioral of entity alu_Shift [alu_shift_default]
+Compiling architecture behavioral of entity ALU_wrapper [alu_wrapper_default]
+Compiling architecture behavior of entity tb_alu_wrapper
+Time Resolution for simulation is 1ps.
+Compiled 19 VHDL Units
+Built simulation executable /home/ctnguyen/Works/pipelineCPU/tb_ALU_wrapper_isim_beh.exe
+Fuse Memory Usage: 52476 KB
+Fuse CPU Usage: 1570 ms
+GCC CPU Usage: 560 ms

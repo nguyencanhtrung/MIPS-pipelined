@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/ctnguyen/Works/pipelineCPU/tb_ALU_wrapper_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="globalconst" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_alu_wrapper" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/tb_alu_wrapper/alu_operand_a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_operand_a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_operand_a[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_alu_wrapper/alu_operand_b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_operand_b[15:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_operand_b[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_alu_wrapper/alu_opcode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_opcode[2:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_opcode[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_alu_wrapper/alu_zero" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_zero</obj_property>
+      <obj_property name="ObjectShortName">alu_zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_alu_wrapper/alu_result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_result[15:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_result[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_alu_wrapper/alu_less_than" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_less_than</obj_property>
+      <obj_property name="ObjectShortName">alu_less_than</obj_property>
+   </wvobject>
+</wave_config>

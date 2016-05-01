@@ -1,0 +1,34 @@
+Command line:
+   tb_ALU_wrapper_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  40314
+
+Mon Apr 25 11:23:19 2016
+
+
+ Elaboration Time: 0.08 sec
+
+ Current Memory Usage: 132.776 Meg
+
+ Total Signals          : 86
+ Total Nets             : 186
+ Total Signal Drivers   : 88
+ Total Blocks           : 14
+ Total Primitive Blocks : 10
+ Total Processes        : 86
+ Total Traceable Variables  : 55
+ Total Scalar Nets and Variables : 831
+
+** Failure:Simulation Successful
+User(VHDL) Code Called Simulation Stop
+In process tb_ALU_wrapper.vhd:tb 
+ 
+
+
+ Total Simulation Time: 0.1 sec
+
+ Current Memory Usage: 142.217 Meg
+
+Mon Apr 25 11:46:23 2016
+
