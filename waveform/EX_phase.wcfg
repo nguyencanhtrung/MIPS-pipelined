@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/ctnguyen/Works/pipelineCPU/tb_EX_phase_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="globalconst" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_ex_phase" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/tb_ex_phase/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ex_phase/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="group23" type="group">
+      <obj_property name="label">Reg Des</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_ex_phase/uut/regdes_sel" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">regdes_sel</obj_property>
+         <obj_property name="ObjectShortName">regdes_sel</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_ex_phase/uut/rd" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_ex_phase/uut/rt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rt[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_ex_phase/uut/regdes" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">regdes[4:0]</obj_property>
+         <obj_property name="ObjectShortName">regdes[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group6" type="group">
+      <obj_property name="label">ALU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_ex_phase/uut/alu_src" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">alu_src</obj_property>
+         <obj_property name="ObjectShortName">alu_src</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_ex_phase/uut/ALU/alu_opcode" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">alu_opcode[2:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_opcode[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_ex_phase/uut/ALU/alu_operand_a" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">alu_operand_a[15:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_operand_a[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_ex_phase/uut/ALU/alu_operand_b" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">alu_operand_b[15:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_operand_b[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_ex_phase/uut/ALU/alu_result" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">alu_result[15:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_result[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group11" type="group">
+      <obj_property name="label">Branch</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_ex_phase/uut/nx_pc" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">nx_pc[15:0]</obj_property>
+         <obj_property name="ObjectShortName">nx_pc[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_ex_phase/uut/imm" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">imm[15:0]</obj_property>
+         <obj_property name="ObjectShortName">imm[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_ex_phase/uut/branch_target_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">branch_target_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">branch_target_addr[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="divider25" type="divider">
+      <obj_property name="label">Final </obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ex_phase/uut/dec_ex_reg" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dec_ex_reg[79:0]</obj_property>
+      <obj_property name="ObjectShortName">dec_ex_reg[79:0]</obj_property>
+      <obj_property name="label">dec_ex_reg[79:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ex_phase/uut/ex_mem_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ex_mem_reg[60:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_mem_reg[60:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

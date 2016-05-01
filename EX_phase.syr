@@ -108,9 +108,6 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/globalConst.vhd" into library work
-Parsing package <globalConst>.
-Parsing package body <globalConst>.
 Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/four_bits_CLA_adder.vhd" into library work
 Parsing entity <four_bits_CLA_adder>.
 Parsing architecture <Behavioral> of entity <four_bits_cla_adder>.
@@ -120,6 +117,9 @@ Parsing architecture <Behavioral> of entity <carry_look_ahead_block>.
 Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/sixteen_bits_adder.vhd" into library work
 Parsing entity <sixteen_bits_adder>.
 Parsing architecture <Behavioral> of entity <sixteen_bits_adder>.
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/globalConst.vhd" into library work
+Parsing package <globalConst>.
+Parsing package body <globalConst>.
 Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/sixteen_bits_add_sub.vhd" into library work
 Parsing entity <sixteen_bits_add_sub>.
 Parsing architecture <Behavioral> of entity <sixteen_bits_add_sub>.
@@ -162,8 +162,8 @@ Elaborating entity <alu_Shift> (architecture <Behavioral>) from library <work>.
 
 Synthesizing Unit <EX_phase>.
     Related source file is "/home/ctnguyen/Works/pipelineCPU/src/EX_phase.vhd".
-INFO:Xst:3210 - "/home/ctnguyen/Works/pipelineCPU/src/EX_phase.vhd" line 55: Output port <over_flow> of the instance <Br_addr_cal> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ctnguyen/Works/pipelineCPU/src/EX_phase.vhd" line 55: Output port <carry_out> of the instance <Br_addr_cal> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ctnguyen/Works/pipelineCPU/src/EX_phase.vhd" line 76: Output port <over_flow> of the instance <Br_addr_cal> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ctnguyen/Works/pipelineCPU/src/EX_phase.vhd" line 76: Output port <carry_out> of the instance <Br_addr_cal> is unconnected or connected to loadless signal.
     Found 61-bit register for signal <EX_MEM_Reg>.
 INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal branch_target_addr may hinder XST clustering optimizations.
     Summary:
@@ -190,7 +190,7 @@ Unit <carry_look_ahead_block> synthesized.
 
 Synthesizing Unit <ALU_wrapper>.
     Related source file is "/home/ctnguyen/Works/pipelineCPU/src/ALU_wrapper.vhd".
-INFO:Xst:3210 - "/home/ctnguyen/Works/pipelineCPU/src/ALU_wrapper.vhd" line 49: Output port <carry_out> of the instance <ALU_adder_subtracter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ctnguyen/Works/pipelineCPU/src/ALU_wrapper.vhd" line 46: Output port <carry_out> of the instance <ALU_adder_subtracter> is unconnected or connected to loadless signal.
     Found 8x2-bit Read Only RAM for signal <opLogic>
     Summary:
 	inferred   1 RAM(s).
@@ -206,7 +206,7 @@ Unit <sixteen_bits_add_sub> synthesized.
 
 Synthesizing Unit <alu_Logic>.
     Related source file is "/home/ctnguyen/Works/pipelineCPU/src/alu_Logic.vhd".
-    Found 16-bit 4-to-1 multiplexer for signal <result> created at line 29.
+    Found 16-bit 4-to-1 multiplexer for signal <result> created at line 20.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <alu_Logic> synthesized.
@@ -215,11 +215,11 @@ Synthesizing Unit <alu_Shift>.
     Related source file is "/home/ctnguyen/Works/pipelineCPU/src/alu_Shift.vhd".
 WARNING:Xst:647 - Input <operand_b<5:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <operand_b<15:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 32-bit subtractor for signal <n0047> created at line 44.
-    Found 16-bit shifter logical right for signal <n0049[15:0]> created at line 44
-    Found 16-bit shifter logical left for signal <n0053[15:0]> created at line 43
-    Found 16-bit shifter logical left for signal <n0048[15:0]> created at line 44
-    Found 16-bit shifter logical right for signal <n0052[15:0]> created at line 43
+    Found 32-bit subtractor for signal <n0047> created at line 37.
+    Found 16-bit shifter logical right for signal <n0049[15:0]> created at line 37
+    Found 16-bit shifter logical left for signal <n0053[15:0]> created at line 36
+    Found 16-bit shifter logical left for signal <n0048[15:0]> created at line 37
+    Found 16-bit shifter logical right for signal <n0052[15:0]> created at line 36
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   7 Multiplexer(s).
@@ -476,13 +476,13 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 11.88 secs
+Total REAL time to Xst completion: 32.00 secs
+Total CPU time to Xst completion: 14.53 secs
  
 --> 
 
 
-Total memory usage is 202984 kilobytes
+Total memory usage is 202988 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)

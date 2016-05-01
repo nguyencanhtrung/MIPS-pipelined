@@ -5,7 +5,7 @@
 -- Create Date:    03:58:33 03/30/2016 
 -- Design Name: 	 ALU module
 -- Module Name:    sixteen_bits_adder - Behavioral 
--- Project Name: 	 Pipeline CPU 2016
+-- Project Name: 	 Pipeline CPU
 -- Target Devices: General Platform
 -- Tool versions:  Xilinx ISE 14.7
 -- Description: 

@@ -1,6 +1,5 @@
 ISim log file
-Running: /home/ctnguyen/Works/pipelineCPU/tb_ALU_wrapper_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ctnguyen/Works/pipelineCPU/tb_ALU_wrapper_isim_beh.wdb 
-INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
+Running: /home/ctnguyen/Works/pipelineCPU/tb_EX_phase_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ctnguyen/Works/pipelineCPU/tb_EX_phase_isim_beh.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
@@ -13,15 +12,23 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps: Note:  Start Simulation ... (/tb_alu_wrapper/).
+at 0 ps, Instance /tb_ex_phase/uut/ALU/ALU_shift/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 Finished circuit initialization process.
-at 110 ns, Instance /tb_alu_wrapper/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 130 ns, Instance /tb_alu_wrapper/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 150 ns, Instance /tb_alu_wrapper/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
 
 ** Failure:Simulation Successful
 User(VHDL) Code Called Simulation Stop
-In process tb_ALU_wrapper.vhd:stim_proc 
+In process tb_EX_phase.vhd:stim_proc 
+ 
+INFO: Simulator is stopped.
+# restart
+# run all
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_ex_phase/uut/ALU/ALU_shift/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+
+** Failure:Simulation Successful
+User(VHDL) Code Called Simulation Stop
+In process tb_EX_phase.vhd:stim_proc 
  
 INFO: Simulator is stopped.
 # exit 0

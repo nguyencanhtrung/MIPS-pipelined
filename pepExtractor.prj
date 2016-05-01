@@ -1,4 +1,5 @@
 work	"src/ALU_wrapper.vhd"
+work	"src/EX_phase.vhd"
 work	"src/alu_Logic.vhd"
 work	"src/alu_Shift.vhd"
 work	"src/carry_look_ahead_block.vhd"
