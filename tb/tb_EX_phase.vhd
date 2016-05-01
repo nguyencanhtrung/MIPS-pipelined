@@ -92,7 +92,7 @@ BEGIN
 			DEC_EX_Reg(73)					<= aluSrc_Imm;
 			DEC_EX_Reg(79 downto 74)	<= std_logic_vector(to_unsigned(38, 6));
 		wait for clk_period;
-			DEC_EX_Reg(71 downto 69)	<=	alu_Add;
+			DEC_EX_Reg(71 downto 69)	<=	alu_Sub;
 			DEC_EX_Reg(72)					<= des_Rd;
 			DEC_EX_Reg(73)					<= aluSrc_Rt;
 		wait for clk_period;

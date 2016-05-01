@@ -2,12 +2,12 @@ Command line:
    tb_EX_phase_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  42311
+     -socket  52429
 
-Sun May  1 16:49:30 2016
+Sun May  1 16:52:29 2016
 
 
- Elaboration Time: 0.1 sec
+ Elaboration Time: 0.08 sec
 
  Current Memory Usage: 132.927 Meg
 
@@ -32,9 +32,9 @@ In process tb_EX_phase.vhd:stim_proc
  
 
 
- Total Simulation Time: 0.11 sec
+ Total Simulation Time: 0.1 sec
 
  Current Memory Usage: 142.369 Meg
 
-Sun May  1 16:50:30 2016
+Sun May  1 16:52:58 2016
 
