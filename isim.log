@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/ctnguyen/Works/pipelineCPU/tb_ALU_wrapper_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ctnguyen/Works/pipelineCPU/tb_ALU_wrapper_isim_beh.wdb 
+Running: /home/ctnguyen/Works/pipelineCPU/tb_register_file_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ctnguyen/Works/pipelineCPU/tb_register_file_isim_beh.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
@@ -12,12 +12,22 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps, Instance /tb_alu_wrapper/ALU/ALU_shift/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps: Note: Start Simulation of Register File ... (/tb_register_file/).
 Finished circuit initialization process.
 
 ** Failure:Simulation Successful
 User(VHDL) Code Called Simulation Stop
-In process tb_ALU_wrapper.vhd:tb 
+In process tb_register_file.vhd:stim_proc 
  
 INFO: Simulator is stopped.
-# exit 0
+# restart
+# run all
+Simulator is doing circuit initialization process.
+at 0 ps: Note: Start Simulation of Register File ... (/tb_register_file/).
+Finished circuit initialization process.
+
+** Failure:Simulation Successful
+User(VHDL) Code Called Simulation Stop
+In process tb_register_file.vhd:stim_proc 
+ 
+INFO: Simulator is stopped.

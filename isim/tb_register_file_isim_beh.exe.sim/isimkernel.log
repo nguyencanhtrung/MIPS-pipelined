@@ -1,0 +1,33 @@
+Command line:
+   tb_register_file_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  36990
+
+Sun May  1 12:36:53 2016
+
+
+ Elaboration Time: 0.08 sec
+
+ Current Memory Usage: 132.764 Meg
+
+ Total Signals          : 19
+ Total Nets             : 578
+ Total Signal Drivers   : 10
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 5
+ Total Traceable Variables  : 16
+ Total Scalar Nets and Variables : 1064
+
+** Failure:Simulation Successful
+User(VHDL) Code Called Simulation Stop
+In process tb_register_file.vhd:stim_proc 
+ 
+
+
+** Failure:Simulation Successful
+User(VHDL) Code Called Simulation Stop
+In process tb_register_file.vhd:stim_proc 
+ 
+

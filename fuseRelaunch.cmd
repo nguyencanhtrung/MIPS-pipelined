@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "/home/ctnguyen/Works/pipelineCPU/tb_ALU_wrapper_isim_beh.exe" -prj "/home/ctnguyen/Works/pipelineCPU/tb_ALU_wrapper_beh.prj" "work.tb_ALU_wrapper" 
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ctnguyen/Works/pipelineCPU/tb_register_file_isim_beh.exe" -prj "/home/ctnguyen/Works/pipelineCPU/tb_register_file_beh.prj" "work.tb_register_file" 
