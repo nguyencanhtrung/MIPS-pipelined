@@ -1,11 +1,10 @@
 ----------------------------------------------------------------------------------
 -- TU Kaiserslautern 
--- Student: Trung C. Nguyen and Waseem Hassan
+-- Student: Trung C. Nguyen
 -- 
--- Create Date:    02:37:43 03/30/2016 
 -- Design Name: 	 ALU module
 -- Module Name:    four_bits_CLA_adder - Behavioral 
--- Project Name: 	 Pipeline CPU 2016
+-- Project Name: 	 Pipeline CPU
 -- Target Devices: General Platform
 -- Tool versions:  Xilinx ISE 14.7 
 -- Description: 
@@ -14,12 +13,6 @@
 --		Output: 4-bit signed number (result)
 --				  1- bit 4bitgroup generate and 1-bit 4bitgroup propagate (Hierarchy solution)
 --		Using Carry Look Ahead Adder technique
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;

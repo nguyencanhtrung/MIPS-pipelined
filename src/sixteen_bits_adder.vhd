@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- TU Kaiserslautern
--- Engineer: Trung C. Nguyen and Waseem Hassan
+-- Engineer: Trung C. Nguyen
 -- 
 -- Create Date:    03:58:33 03/30/2016 
 -- Design Name: 	 ALU module
@@ -9,18 +9,11 @@
 -- Target Devices: General Platform
 -- Tool versions:  Xilinx ISE 14.7
 -- Description: 
+--		Using Carry Look Ahead Adder technique
 -- 	Input	: two 16-bit signed number (2's complement form)
 --				  1-bit carry in
 --		Output: 16-bit signed number (result)
 --				  1- bit carry out and 1-bit overflow
---		Using Carry Look Ahead Adder technique
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;

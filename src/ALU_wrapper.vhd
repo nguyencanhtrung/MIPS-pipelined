@@ -1,27 +1,23 @@
 ----------------------------------------------------------------------------------
 -- TU Kaiserslautern
--- Student: Trung C. Nguyen and Waseem Hassan
+-- Student: Trung C. Nguyen
 -- 
 -- Create Date:    11:22:04 04/09/2016 
 -- Design Name: 
--- Module Name:    ALU_wrapper - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
+-- Module Name:    	ALU_wrapper - Behavioral 
+-- Project Name:	 	pipeline CPU 
+-- Target Devices: 	General platform
+-- Tool versions:  	Xilinx ISE 14.7
 -- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
+--				ALU module supports: 
+--					+ 16-bit signed addition and subtraction
+--					+ 16-bit logic operation
+--					+ shift logic
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use work.all;
 use work.globalConst.all;
---use IEEE.NUMERIC_STD.ALL;
 
 entity ALU_wrapper is
     Port ( ALU_operand_a 	: in  	STD_LOGIC_VECTOR (15 downto 0);
@@ -44,6 +40,7 @@ signal resultShift		:	std_logic_vector(15 downto 0);
 	-- overflow addsub
 signal over_flow			: 	std_logic;
 signal c_outAddSub_dummy:	std_logic;
+
 begin	
 	-- ALU components
 ALU_adder_subtracter: entity work.sixteen_bits_add_sub
@@ -68,7 +65,7 @@ ALU_shift: entity work.alu_Shift
          operand_b 	=>	ALU_operand_b,
          shiftOp 		=> opShift,
          result 		=>	resultShift);
-	-- MUXes for operations
+	-- MUXes for controlling operations
 opAddSub			<=		ex_opAdd when 	ALU_opcode = alu_Add
 					else	ex_opSub;									-- prevent unintended latch 
 opLogic			<=		ex_opAnd when 	ALU_opcode = alu_And
@@ -77,7 +74,7 @@ opLogic			<=		ex_opAnd when 	ALU_opcode = alu_And
 					else	ex_opXor;									-- prevent unintended latch 
 opShift			<=		ex_opSll when 	ALU_opcode = alu_Sll
 					else	ex_opSrl;									-- prevent unintended latch 
-	-- MUX for ALU result
+	-- MUXes for ALU result
 ALU_result		<=		resultAddSub	when	ALU_opcode = alu_Add or ALU_opcode = alu_Sub
 					else 	resultLogic		when	ALU_opcode = alu_And or ALU_opcode = alu_Or 
 													or ALU_opcode = alu_Not or ALU_opcode = alu_Xor
@@ -85,7 +82,9 @@ ALU_result		<=		resultAddSub	when	ALU_opcode = alu_Add or ALU_opcode = alu_Sub
 	-- Zero
 ALU_zero			<= '1' when resultAddSub = x"0000"
 					else '0';
-	-- Less than
+	-- Less than  
+	-- Operand a < operand b  AND substraction => set less than = 1
+	-- Operand a > operand b  AND addition  => set less than = 1
 ALU_less_than	<= resultAddSub(15) XOR over_flow;
 end Behavioral;
 

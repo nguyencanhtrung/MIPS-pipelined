@@ -1,30 +1,23 @@
 ----------------------------------------------------------------------------------
 -- TU Kaiserslautern
--- Students: Trung C. Nguyen and Waseem Hassan
+-- Students: Trung C. Nguyen 
 -- 
 -- Create Date:    04:24:23 03/30/2016 
 -- Design Name: 	 ALU unit
 -- Module Name:    sixteen_bits_add_sub - Behavioral 
--- Project Name: 	 Pipeline CPU 2016
+-- Project Name: 	 Pipeline CPU
 -- Target Devices: General Platform
 -- Tool versions:  Xilinx ISE 14.7
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use work.all;
+use work.globalConst.all;
 
 entity sixteen_bits_add_sub is
     Port ( operand_a 	: in  STD_LOGIC_VECTOR (15 downto 0);
            operand_b 	: in  STD_LOGIC_VECTOR (15 downto 0);
-           mode 			: in  STD_LOGIC;			-- 0: addition; 1 subtraction
+           mode 			: in  STD_LOGIC;			
            over_flow 	: out  STD_LOGIC;
 			  carry_out 	: out  STD_LOGIC;
            result 		: inout  STD_LOGIC_VECTOR (15 downto 0));
@@ -34,10 +27,10 @@ architecture Behavioral of sixteen_bits_add_sub is
 signal b_feed		: std_logic_vector(15 downto 0);
 signal carry_feed	: std_logic;
 begin
-	b_feed 		<= operand_b 	when mode = '0'		-- addition
-						else not(operand_b);					-- subtraction	
-	carry_feed 	<= '0' 			when mode = '0'		-- addition
-						else '1';								-- subtraction
+	b_feed 		<= operand_b 	when mode = ex_opAdd		
+						else not(operand_b);					
+	carry_feed 	<= '0' 			when mode = ex_opAdd		
+						else '1';								
 				
 	adder: entity work.sixteen_bits_adder
 	Port map ( 

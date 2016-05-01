@@ -1,8 +1,7 @@
 ----------------------------------------------------------------------------------
 -- TU Kaiserslautern
--- Student: Trung C. Nguyen and Wassem Hassan
+-- Student: Trung C. Nguyen
 -- 
--- Create Date:    14:43:05 04/11/2016 
 -- Design Name:    	ALU unit
 -- Module Name:    	alu_Shift - Behavioral 
 -- Project Name: 		Pipeline CPU
@@ -16,12 +15,6 @@
 --					rd = rs op shamt;
 --					shamt is unsigned in range [0, 31] but need only from [0, 16]
 --					sll $r1 r2 14;    <=> $r1 = $r2 sll 14;
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -38,7 +31,7 @@ end alu_Shift;
 architecture Behavioral of alu_Shift is
 signal	int_shamt	: integer;
 begin
-		-- Extract shamt field
+		-- Extracting shamt field
 	int_shamt	<=		to_integer(signed(operand_b(10 downto 6)));	
 	result 		<=		to_stdlogicvector(to_bitvector(operand_a) sll int_shamt) when shiftOp = ex_opSll
 					else	to_stdlogicvector(to_bitvector(operand_a) srl int_shamt) when shiftOp = ex_opSrl;

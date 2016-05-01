@@ -5,16 +5,10 @@
 -- Create Date:    11:29:10 04/10/2016 
 -- Design Name: 
 -- Module Name:    decode_phase - Behavioral 
--- Project Name: 
+-- Project Name:   pipeline CPU
 -- Target Devices: 
--- Tool versions: 
+-- Tool versions:   ISE 14.7
 -- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
 --
 ----------------------------------------------------------------------------------
 library IEEE;

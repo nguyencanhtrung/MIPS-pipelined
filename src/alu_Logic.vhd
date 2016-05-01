@@ -1,8 +1,7 @@
 ----------------------------------------------------------------------------------
 -- TU Kaiserslautern
--- Students: Trung C. Nguyen and Waseem Hassan
+-- Student: Trung C. Nguyen
 -- 
--- Create Date:    	13:53:35 04/11/2016 
 -- Design Name: 	 	ALU unit
 -- Module Name:    	alu_Logic - Behavioral 
 -- Project Name: 	 	pipeline CPU
@@ -13,18 +12,10 @@
 --							R-type: AND, OR, XOR: 	 	rd = rs op rt
 --							I-type: ANDi, ORi, XORi: 	rt = rs op imm(16bits)
 --							Special case: NOT			 	rd = not(rs)
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use work.globalConst.all;				-- package including encoded logicOp
-
---use IEEE.NUMERIC_STD.ALL;
 
 entity alu_Logic is
     Port ( operand_a : in  STD_LOGIC_VECTOR (15 downto 0);	-- rs
@@ -34,7 +25,6 @@ entity alu_Logic is
 end alu_Logic;
 
 architecture Behavioral of alu_Logic is
-
 begin
 	result	<=			operand_a AND operand_b when logicOp = ex_opAnd
 					else	operand_a OR  operand_b when logicOp = ex_opOr

@@ -31,3 +31,10 @@ User(VHDL) Code Called Simulation Stop
 In process tb_register_file.vhd:stim_proc 
  
 
+
+ Total Simulation Time: 0.16 sec
+
+ Current Memory Usage: 142.205 Meg
+
+Sun May  1 13:49:48 2016
+
