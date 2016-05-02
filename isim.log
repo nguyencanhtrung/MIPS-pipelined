@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/ctnguyen/Works/pipelineCPU/tb_EX_phase_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ctnguyen/Works/pipelineCPU/tb_EX_phase_isim_beh.wdb 
+Running: /home/ctnguyen/Works/pipelineCPU/tb_DEC_phase_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ctnguyen/Works/pipelineCPU/tb_DEC_phase_isim_beh.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
@@ -12,23 +12,62 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps, Instance /tb_ex_phase/uut/ALU/ALU_shift/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_dec_phase/uut/regFile/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_dec_phase/uut/regFile/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 Finished circuit initialization process.
 
 ** Failure:Simulation Successful
 User(VHDL) Code Called Simulation Stop
-In process tb_EX_phase.vhd:stim_proc 
+In process tb_DEC_phase.vhd:stim_proc 
  
 INFO: Simulator is stopped.
 # restart
 # run all
 Simulator is doing circuit initialization process.
-at 0 ps, Instance /tb_ex_phase/uut/ALU/ALU_shift/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_dec_phase/uut/regFile/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_dec_phase/uut/regFile/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 Finished circuit initialization process.
 
 ** Failure:Simulation Successful
 User(VHDL) Code Called Simulation Stop
-In process tb_EX_phase.vhd:stim_proc 
+In process tb_DEC_phase.vhd:stim_proc 
  
 INFO: Simulator is stopped.
+# restart
+# run all
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_dec_phase/uut/regFile/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_dec_phase/uut/regFile/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+
+** Failure:Simulation Successful
+User(VHDL) Code Called Simulation Stop
+In process tb_DEC_phase.vhd:stim_proc 
+ 
+INFO: Simulator is stopped.
+# show driver /tb_dec_phase/uut/instr_opcode
+Driver for /tb_dec_phase/uut/instr_opcode[0]
+	'1'	: /tb_dec_phase/uut/:69
+		  in File "/home/ctnguyen/Works/pipelineCPU/src/DEC_phase.vhd" Line 69
+
+Driver for /tb_dec_phase/uut/instr_opcode[1]
+	'0'	: /tb_dec_phase/uut/:69
+		  in File "/home/ctnguyen/Works/pipelineCPU/src/DEC_phase.vhd" Line 69
+
+Driver for /tb_dec_phase/uut/instr_opcode[2]
+	'0'	: /tb_dec_phase/uut/:69
+		  in File "/home/ctnguyen/Works/pipelineCPU/src/DEC_phase.vhd" Line 69
+
+Driver for /tb_dec_phase/uut/instr_opcode[3]
+	'0'	: /tb_dec_phase/uut/:69
+		  in File "/home/ctnguyen/Works/pipelineCPU/src/DEC_phase.vhd" Line 69
+
+Driver for /tb_dec_phase/uut/instr_opcode[4]
+	'1'	: /tb_dec_phase/uut/:69
+		  in File "/home/ctnguyen/Works/pipelineCPU/src/DEC_phase.vhd" Line 69
+
+Driver for /tb_dec_phase/uut/instr_opcode[5]
+	'0'	: /tb_dec_phase/uut/:69
+		  in File "/home/ctnguyen/Works/pipelineCPU/src/DEC_phase.vhd" Line 69
+
 # exit 0

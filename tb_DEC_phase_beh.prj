@@ -1,3 +1,4 @@
 vhdl work "src/register_file.vhd"
 vhdl work "src/globalConst.vhd"
 vhdl work "src/DEC_phase.vhd"
+vhdl work "tb/tb_DEC_phase.vhd"

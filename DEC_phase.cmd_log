@@ -6,3 +6,4 @@ xst -intstyle ise -ifn "/home/ctnguyen/Works/pipelineCPU/DEC_phase.xst" -ofn "/h
 xst -intstyle ise -ifn "/home/ctnguyen/Works/pipelineCPU/DEC_phase.xst" -ofn "/home/ctnguyen/Works/pipelineCPU/DEC_phase.syr" 
 xst -intstyle ise -ifn "/home/ctnguyen/Works/pipelineCPU/DEC_phase.xst" -ofn "/home/ctnguyen/Works/pipelineCPU/DEC_phase.syr" 
 xst -intstyle ise -ifn "/home/ctnguyen/Works/pipelineCPU/DEC_phase.xst" -ofn "/home/ctnguyen/Works/pipelineCPU/DEC_phase.syr" 
+xst -intstyle ise -ifn "/home/ctnguyen/Works/pipelineCPU/DEC_phase.xst" -ofn "/home/ctnguyen/Works/pipelineCPU/DEC_phase.syr" 

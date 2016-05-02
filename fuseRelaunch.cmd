@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "/home/ctnguyen/Works/pipelineCPU/tb_EX_phase_isim_beh.exe" -prj "/home/ctnguyen/Works/pipelineCPU/tb_EX_phase_beh.prj" "work.tb_EX_phase" 
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ctnguyen/Works/pipelineCPU/tb_DEC_phase_isim_beh.exe" -prj "/home/ctnguyen/Works/pipelineCPU/tb_DEC_phase_beh.prj" "work.tb_DEC_phase" 

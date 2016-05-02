@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- TU Kaiserslautern	
--- Student: Trung C. Nguyen and Waseem Hassan
+-- Student: Trung C. Nguyen
 -- 
 -- Create Date:    11:29:10 04/10/2016 
 -- Design Name: 
@@ -9,7 +9,21 @@
 -- Target Devices: 
 -- Tool versions:   ISE 14.7
 -- Description: 
---
+--	reg DEC/EX - DEC_EX_Reg
+--		15 - 0 :	EX - IR(15 - 0) : imm and rd
+--		20 - 16: EX - IR(20 -16) : rt
+--		36 - 21: EX - Read Data 2 from RegFile (16 bits)
+--		52 - 37: EX - Read Data 1 from RegFile (16 bits)
+--		68 - 53: EX - PC 16 bits
+--		71 - 69: EX - ALU_op (3bits)		
+--		72		 : EX - Write to RegFile - RegDes (rd or rt)
+--		73		 : EX - ALUsrc (rt or Imm)
+--		74		 : MEM- Mem Write enable  (store)
+--		75		 : MEM- Mem Read Enable	(load)
+--		76		 :	MEM- Branch indicator
+--		78 - 77: WB - Data source that write to RegFile(from ALU result or from Memory(Load))
+--		79		 : WB - RegFile Write enable	
+----------------------------------------
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -134,7 +148,7 @@ begin
 							WB_toRegFile_en		<= '1';
 		when opNot 	=>
 							EX_alu_op				<= alu_Not;
-							EX_alu_src				<= aluSrc_Rt;
+							EX_alu_src				<= aluSrc_Rt;  -- don't care
 							EX_regDes				<=	des_Rd;
 							
 							MEM_branch_indicator <= '0';
@@ -215,7 +229,7 @@ begin
 		when opBeq 	=>
 							EX_alu_op				<= alu_Sub;
 							EX_alu_src				<= aluSrc_Rt;
-							EX_regDes				<=	des_Rt;				-- don't care
+							EX_regDes				<=	des_Rt;	-- don't care
 							
 							MEM_branch_indicator	<= '1';
 							MEM_read_en				<= '0';
@@ -264,21 +278,6 @@ begin
 							WB_toRegFile_en		<= '0';
 	end case;	
 end process;
-			
-	--	Extract data from pipeline reg DEC/EX - DEC_EX_Reg
---		15 - 0 :	EX - IR(15 - 0) : imm and rd
---		20 - 16: EX - IR(20 -16) : rt
---		36 - 21: EX - Read Data 2 from RegFile (16 bits)
---		52 - 37: EX - Read Data 1 from RegFile (16 bits)
---		68 - 53: EX - PC 16 bits
---		71 - 69: EX - ALU_op (3bits)		
---		72		 : EX - Write to RegFile - RegDes (rd or rt)
---		73		 : EX - ALUsrc (rt or Imm)
---		74		 : MEM- Mem Write enable  (store)
---		75		 : MEM- Mem Read Enable	(load)
---		76		 :	MEM- Branch indicator
---		78 - 77: WB - Data source that write to RegFile(from ALU result or from Memory(Load))
---		79		 : WB - RegFile Write enable	
 ----------------------------------------
 	-- update to DEC_EX pipeline register
 update_DEC_EX_Reg:process(clk,rst)	
