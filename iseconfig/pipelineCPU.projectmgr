@@ -12,7 +12,13 @@
          <ClosedNode>/ALU_wrapper - Behavioral |home|ctnguyen|Works|pipelineCPU|src|ALU_wrapper.vhd</ClosedNode>
          <ClosedNode>/ALU_wrapper - Behavioral |home|ctnguyen|Works|pipelineCPU|src|ALU_wrapper.vhd/ALU_adder_subtracter - sixteen_bits_add_sub - Behavioral</ClosedNode>
          <ClosedNode>/DEC_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|DEC_phase.vhd</ClosedNode>
+         <ClosedNode>/EX_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|EX_phase.vhd</ClosedNode>
+         <ClosedNode>/EX_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|EX_phase.vhd/ALU - ALU_wrapper - Behavioral/ALU_adder_subtracter - sixteen_bits_add_sub - Behavioral/adder - sixteen_bits_adder - Behavioral</ClosedNode>
+         <ClosedNode>/EX_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|EX_phase.vhd/Br_addr_cal - sixteen_bits_adder - Behavioral</ClosedNode>
+         <ClosedNode>/IF_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|IF_phase.vhd</ClosedNode>
          <ClosedNode>/decode_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|decode_phase.vhd</ClosedNode>
+         <ClosedNode>/fixedpoint_divider_module - Behavioral |home|ctnguyen|Works|pipelineCPU|src|fixedpoint_divider_module.vhd</ClosedNode>
+         <ClosedNode>/fixedpoint_multiplier_module - Behavioral |home|ctnguyen|Works|pipelineCPU|src|fixedpoint_multiplier_module.vhd</ClosedNode>
          <ClosedNode>/tb_ALU_wrapper - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_ALU_wrapper.vhd/ALU - ALU_wrapper - Behavioral/ALU_adder_subtracter - sixteen_bits_add_sub - Behavioral</ClosedNode>
          <ClosedNode>/tb_carry_look_ahead_block - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_carry_look_ahead_block.vhd</ClosedNode>
          <ClosedNode>/tb_fixedpoint_divider_module - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_fixedpoint_divider_module.vhd</ClosedNode>
@@ -23,17 +29,18 @@
          <ClosedNode>/tb_sixteen_bits_add_sub - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_sixteen_bits_add_sub.vhd/uut - sixteen_bits_add_sub - Behavioral</ClosedNode>
          <ClosedNode>/tb_sixteen_bits_adder - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_sixteen_bits_adder.vhd</ClosedNode>
          <ClosedNode>/tb_sixteen_bits_adder - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_sixteen_bits_adder.vhd/uut - sixteen_bits_adder - Behavioral</ClosedNode>
+         <ClosedNode>/tb_sixteen_bits_adder - behavior |home|ctnguyen|Works|pipelineCPU|tb|tb_sixteen_bits_adder.vhd</ClosedNode>
          <ClosedNode>/tb_unsigned_fixedpoint_divider_module - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_unsigned_fixedpoint_divider_module.vhd</ClosedNode>
          <ClosedNode>/tb_updated_reg_file - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_updated_reg_file.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>third_4bits - four_bits_CLA_adder - Behavioral (/home/ctnguyen/Works/pipelineCPU/src/four_bits_CLA_adder.vhd)</SelectedItem>
+         <SelectedItem>MEM_Instruction - Behavioral (/home/ctnguyen/Works/pipelineCPU/src/MEM_Instruction.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >5</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002ba000000020000000000000000000000000200000064ffffffff000000810000000300000002000002ba0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000023f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000023f0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>third_4bits - four_bits_CLA_adder - Behavioral (/home/ctnguyen/Works/pipelineCPU/src/four_bits_CLA_adder.vhd)</CurrentItem>
+      <CurrentItem>MEM_Instruction - Behavioral (/home/ctnguyen/Works/pipelineCPU/src/MEM_Instruction.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -44,13 +51,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000130000000010000000100000000000000000000000064ffffffff000000810000000000000001000001300000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -87,13 +94,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Synthesize - XST</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >4</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000130000000010000000100000000000000000000000064ffffffff000000810000000000000001000001300000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000120000000010000000100000000000000000000000064ffffffff000000810000000000000001000001200000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Synthesize - XST</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000001510000012001000000060100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
@@ -127,11 +134,22 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/DEC_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|DEC_phase.vhd</ClosedNode>
-         <ClosedNode>/EX_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|EX_phase.vhd</ClosedNode>
-         <ClosedNode>/EX_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|EX_phase.vhd/ALU - ALU_wrapper - Behavioral</ClosedNode>
+         <ClosedNode>/EX_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|EX_phase.vhd/ALU - ALU_wrapper - Behavioral/ALU_adder_subtracter - sixteen_bits_add_sub - Behavioral</ClosedNode>
          <ClosedNode>/EX_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|EX_phase.vhd/Br_addr_cal - sixteen_bits_adder - Behavioral</ClosedNode>
+         <ClosedNode>/fixedpoint_divider_module - Behavioral |home|ctnguyen|Works|pipelineCPU|src|fixedpoint_divider_module.vhd</ClosedNode>
+         <ClosedNode>/fixedpoint_divider_module - Behavioral |home|ctnguyen|Works|pipelineCPU|src|fixedpoint_divider_module.vhd/one_complement_divisor - sixteen_bits_add_sub - Behavioral</ClosedNode>
+         <ClosedNode>/fixedpoint_divider_module - Behavioral |home|ctnguyen|Works|pipelineCPU|src|fixedpoint_divider_module.vhd/two_complement_udiv_quotient - sixteen_bits_add_sub - Behavioral</ClosedNode>
+         <ClosedNode>/fixedpoint_divider_module - Behavioral |home|ctnguyen|Works|pipelineCPU|src|fixedpoint_divider_module.vhd/two_complement_udiv_remainder - sixteen_bits_add_sub - Behavioral</ClosedNode>
+         <ClosedNode>/fixedpoint_divider_module - Behavioral |home|ctnguyen|Works|pipelineCPU|src|fixedpoint_divider_module.vhd/unsigned_divider - unsigned_fixedpoint_divider_module - Behavioral</ClosedNode>
+         <ClosedNode>/fixedpoint_multiplier_module - Behavioral |home|ctnguyen|Works|pipelineCPU|src|fixedpoint_multiplier_module.vhd</ClosedNode>
+         <ClosedNode>/fixedpoint_multiplier_module - Behavioral |home|ctnguyen|Works|pipelineCPU|src|fixedpoint_multiplier_module.vhd/ALU_block - sixteen_bits_add_sub - Behavioral</ClosedNode>
          <ClosedNode>/tb_ALU_wrapper - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_ALU_wrapper.vhd</ClosedNode>
          <ClosedNode>/tb_ALU_wrapper - behavior |home|ctnguyen|Works|pipelineCPU|tb_ALU_wrapper.vhd/ALU - ALU_wrapper - Behavioral</ClosedNode>
+         <ClosedNode>/tb_ALU_wrapper - behavior |home|ctnguyen|Works|pipelineCPU|tb|tb_ALU_wrapper.vhd</ClosedNode>
+         <ClosedNode>/tb_ALU_wrapper - behavior |home|ctnguyen|Works|pipelineCPU|tb|tb_ALU_wrapper.vhd/uut - ALU_wrapper - Behavioral/ALU_adder_subtracter - sixteen_bits_add_sub - Behavioral</ClosedNode>
+         <ClosedNode>/tb_DEC_phase - behavior |home|ctnguyen|Works|pipelineCPU|tb|tb_DEC_phase.vhd</ClosedNode>
+         <ClosedNode>/tb_EX_phase - behavior |home|ctnguyen|Works|pipelineCPU|tb|tb_EX_phase.vhd</ClosedNode>
+         <ClosedNode>/tb_EX_phase - behavior |home|ctnguyen|Works|pipelineCPU|tb|tb_EX_phase.vhd/uut - EX_phase - Behavioral</ClosedNode>
          <ClosedNode>/tb_carry_look_ahead_block - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_carry_look_ahead_block.vhd</ClosedNode>
          <ClosedNode>/tb_fixedpoint_divider_module - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_fixedpoint_divider_module.vhd</ClosedNode>
          <ClosedNode>/tb_fixedpoint_multiplier_module - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_fixedpoint_multiplier_module.vhd</ClosedNode>
@@ -139,17 +157,18 @@
          <ClosedNode>/tb_register_file - behavior |home|ctnguyen|Works|pipelineCPU|tb|tb_register_file.vhd</ClosedNode>
          <ClosedNode>/tb_sixteen_bits_add_sub - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_sixteen_bits_add_sub.vhd</ClosedNode>
          <ClosedNode>/tb_sixteen_bits_adder - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_sixteen_bits_adder.vhd</ClosedNode>
+         <ClosedNode>/tb_sixteen_bits_adder - behavior |home|ctnguyen|Works|pipelineCPU|tb|tb_sixteen_bits_adder.vhd</ClosedNode>
          <ClosedNode>/tb_unsigned_fixedpoint_divider_module - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_unsigned_fixedpoint_divider_module.vhd</ClosedNode>
          <ClosedNode>/testbench - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_ALU_wrapper.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>tb_register_file - behavior (/home/ctnguyen/Works/pipelineCPU/tb/tb_register_file.vhd)</SelectedItem>
+         <SelectedItem>tb_IF_phase - behavior (/home/ctnguyen/Works/pipelineCPU/tb/tb_IF_phase.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >7</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002ba000000020000000000000000000000000200000064ffffffff000000810000000300000002000002ba0000000100000003000000000000000100000003</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>tb_register_file - behavior (/home/ctnguyen/Works/pipelineCPU/tb/tb_register_file.vhd)</CurrentItem>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000287000000020000000000000000000000000200000064ffffffff000000810000000300000002000002870000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>tb_IF_phase - behavior (/home/ctnguyen/Works/pipelineCPU/tb/tb_IF_phase.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -157,25 +176,25 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000130000000010000000100000000000000000000000064ffffffff000000810000000000000001000001300000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000130000000010000000100000000000000000000000064ffffffff000000810000000000000001000001300000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
 </Project>
