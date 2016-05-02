@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ctnguyen/Works/pipelineCPU/MEM_data.xst" -ofn "/home/ctnguyen/Works/pipelineCPU/MEM_data.syr" 

@@ -1,0 +1,2 @@
+vhdl work "src/globalConst.vhd"
+vhdl work "src/MEM_data.vhd"
