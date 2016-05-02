@@ -265,8 +265,9 @@ begin
 							MEM_read_en				<= '0';
 							MEM_write_en			<= '0';
 							WB_data_source			<= fromALU_lessthan;		-- need to check here;
-							WB_toRegFile_en		<= '1';
-		when others =>																-- prevent unintended latch
+							WB_toRegFile_en		<= '1';		
+		
+		when others =>		-- prevent unintended latch, including nop opcode
 							EX_alu_op				<= alu_Add;
 							EX_alu_src				<= aluSrc_Rt;
 							EX_regDes				<=	des_Rd;

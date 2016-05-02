@@ -42,6 +42,11 @@ constant	jump					:	std_logic_vector(5 downto 0) := "010010";
 constant	nop					:	std_logic_vector(5 downto 0) := "010011";
 ------------------------------------
 ------------------------------------
+-- INTRS FETCH STAGE
+constant pcSrcNxt				:	std_logic := '0';   -- must be zero
+constant pcSrcBr				:	std_logic := '1';
+------------------------------------
+------------------------------------
 -- EXECUTION STAGE
 	--	ALU operations
 constant alu_Add				:  std_logic_vector(2 downto 0) := "000";

@@ -1,26 +1,30 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ctnguyen/Works/pipelineCPU/tb_DEC_phase_isim_beh.exe -prj /home/ctnguyen/Works/pipelineCPU/tb_DEC_phase_beh.prj work.tb_DEC_phase 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ctnguyen/Works/pipelineCPU/tb_IF_phase_isim_beh.exe -prj /home/ctnguyen/Works/pipelineCPU/tb_IF_phase_beh.prj work.tb_IF_phase 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 1
 Turning on mult-threading, number of parallel sub-compilation jobs: 0 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/register_file.vhd" into library work
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/four_bits_CLA_adder.vhd" into library work
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/carry_look_ahead_block.vhd" into library work
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/sixteen_bits_adder.vhd" into library work
 Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/globalConst.vhd" into library work
-Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/DEC_phase.vhd" into library work
-Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/tb/tb_DEC_phase.vhd" into library work
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/src/IF_phase.vhd" into library work
+Parsing VHDL file "/home/ctnguyen/Works/pipelineCPU/tb/tb_IF_phase.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 37756 KB
-Fuse CPU Usage: 1370 ms
+Fuse Memory Usage: 37780 KB
+Fuse CPU Usage: 1420 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
 Compiling package globalconst
-Compiling architecture behavioral of entity register_file [register_file_default]
-Compiling architecture behavioral of entity DEC_phase [dec_phase_default]
-Compiling architecture behavior of entity tb_dec_phase
+Compiling architecture behavioral of entity four_bits_CLA_adder [four_bits_cla_adder_default]
+Compiling architecture behavioral of entity carry_look_ahead_block [carry_look_ahead_block_default]
+Compiling architecture behavioral of entity sixteen_bits_adder [sixteen_bits_adder_default]
+Compiling architecture behavioral of entity IF_phase [if_phase_default]
+Compiling architecture behavior of entity tb_if_phase
 Time Resolution for simulation is 1ps.
-Compiled 9 VHDL Units
-Built simulation executable /home/ctnguyen/Works/pipelineCPU/tb_DEC_phase_isim_beh.exe
-Fuse Memory Usage: 52432 KB
-Fuse CPU Usage: 1490 ms
-GCC CPU Usage: 440 ms
+Compiled 13 VHDL Units
+Built simulation executable /home/ctnguyen/Works/pipelineCPU/tb_IF_phase_isim_beh.exe
+Fuse Memory Usage: 52420 KB
+Fuse CPU Usage: 1540 ms
+GCC CPU Usage: 400 ms

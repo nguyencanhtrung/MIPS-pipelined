@@ -2,12 +2,12 @@ Command line:
    tb_DEC_phase_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  48569
+     -socket  57827
 
-Sun May  1 17:25:18 2016
+Sun May  1 17:43:22 2016
 
 
- Elaboration Time: 0.08 sec
+ Elaboration Time: 0.1 sec
 
  Current Memory Usage: 132.78 Meg
 
@@ -32,15 +32,9 @@ In process tb_DEC_phase.vhd:stim_proc
  
 
 
-** Failure:Simulation Successful
-User(VHDL) Code Called Simulation Stop
-In process tb_DEC_phase.vhd:stim_proc 
- 
-
-
- Total Simulation Time: 0.23 sec
+ Total Simulation Time: 0.11 sec
 
  Current Memory Usage: 142.221 Meg
 
-Sun May  1 17:40:45 2016
+Sun May  1 17:43:54 2016
 
