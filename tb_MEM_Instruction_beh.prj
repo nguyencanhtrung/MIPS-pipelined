@@ -1,0 +1,2 @@
+vhdl work "src/MEM_Instruction.vhd"
+vhdl work "tb/tb_MEM_Instruction.vhd"

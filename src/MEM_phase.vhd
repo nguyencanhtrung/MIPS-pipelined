@@ -34,6 +34,7 @@ use work.all;
 use IEEE.NUMERIC_STD.ALL;
 
 entity MEM_phase is
+	 Generic ( data_mem_size	: integer	:= 512); 
     Port ( clk 			: in  STD_LOGIC;
            rst 			: in  STD_LOGIC;
            EX_MEM_REG 	: in  STD_LOGIC_VECTOR (60 downto 0);
@@ -75,7 +76,7 @@ begin
 
 		-- Data memory
 	Mem_data : entity work.MEM_data
-		Generic map ( size	=> 512) 		-- 1 KB
+		Generic map ( size	=> data_mem_size) 		-- 1 KB
 		Port map( 
 				clk 			 => clk,
 				write_en 	 => write_en,

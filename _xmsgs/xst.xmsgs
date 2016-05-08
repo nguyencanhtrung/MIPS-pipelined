@@ -5,10 +5,32 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">addr&lt;15:9&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="error" file="HDLCompiler" num="104" delta="old" >"/home/ctnguyen/Works/pipelineCPU/src/processor.vhd" Line 62: Cannot find &lt;<arg fmt="%s" index="1">if_phase</arg>&gt; in library &lt;<arg fmt="%s" index="2">work</arg>&gt;. Please ensure that the library was compiled, and that a library and a use clause are present in the VHDL file.
 </msg>
 
-<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">Mem_data/Mram_data_mem</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+<msg type="error" file="HDLCompiler" num="104" delta="old" >"/home/ctnguyen/Works/pipelineCPU/src/processor.vhd" Line 72: Cannot find &lt;<arg fmt="%s" index="1">mem_instruction</arg>&gt; in library &lt;<arg fmt="%s" index="2">work</arg>&gt;. Please ensure that the library was compiled, and that a library and a use clause are present in the VHDL file.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="104" delta="old" >"/home/ctnguyen/Works/pipelineCPU/src/processor.vhd" Line 80: Cannot find &lt;<arg fmt="%s" index="1">dec_phase</arg>&gt; in library &lt;<arg fmt="%s" index="2">work</arg>&gt;. Please ensure that the library was compiled, and that a library and a use clause are present in the VHDL file.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="104" delta="old" >"/home/ctnguyen/Works/pipelineCPU/src/processor.vhd" Line 90: Cannot find &lt;<arg fmt="%s" index="1">ex_phase</arg>&gt; in library &lt;<arg fmt="%s" index="2">work</arg>&gt;. Please ensure that the library was compiled, and that a library and a use clause are present in the VHDL file.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="104" delta="old" >"/home/ctnguyen/Works/pipelineCPU/src/processor.vhd" Line 97: Cannot find &lt;<arg fmt="%s" index="1">mem_phase</arg>&gt; in library &lt;<arg fmt="%s" index="2">work</arg>&gt;. Please ensure that the library was compiled, and that a library and a use clause are present in the VHDL file.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"/home/ctnguyen/Works/pipelineCPU/src/processor.vhd" Line 115: &lt;<arg fmt="%s" index="1">fromalu</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="old" >"/home/ctnguyen/Works/pipelineCPU/src/processor.vhd" Line 116: Syntax error near &quot;<arg fmt="%s" index="1">read_data</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"/home/ctnguyen/Works/pipelineCPU/src/processor.vhd" Line 116: &lt;<arg fmt="%s" index="1">frommem</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="854" delta="old" >"/home/ctnguyen/Works/pipelineCPU/src/processor.vhd" Line 39: Unit &lt;<arg fmt="%s" index="1">behavioral</arg>&gt; ignored due to previous errors.
+</msg>
 
 </messages>
 

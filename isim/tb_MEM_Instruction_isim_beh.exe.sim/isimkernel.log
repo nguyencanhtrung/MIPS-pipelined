@@ -2,12 +2,12 @@ Command line:
    tb_MEM_Instruction_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  50533
+     -socket  42785
 
-Sun May  1 22:40:20 2016
+Sun May  8 11:36:14 2016
 
 
- Elaboration Time: 0.09 sec
+ Elaboration Time: 0.21 sec
 
  Current Memory Usage: 132.788 Meg
 
@@ -24,11 +24,4 @@ Sun May  1 22:40:20 2016
 User(VHDL) Code Called Simulation Stop
 In process tb_MEM_Instruction.vhd:stim_proc 
  
-
-
- Total Simulation Time: 0.09 sec
-
- Current Memory Usage: 142.23 Meg
-
-Sun May  1 22:40:40 2016
 
