@@ -18,6 +18,11 @@
          <ClosedNode>/MEM_Instruction - Behavioral |home|ctnguyen|Works|pipelineCPU|src|MEM_Instruction.vhd</ClosedNode>
          <ClosedNode>/MEM_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|MEM_phase.vhd</ClosedNode>
          <ClosedNode>/MEM_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|MEM_phase.vhd/STD_LOGIC_TEXTIO</ClosedNode>
+         <ClosedNode>/core - Behavioral |home|ctnguyen|Works|pipelineCPU|src|core.vhd/EX_stage - EX_phase - Behavioral</ClosedNode>
+         <ClosedNode>/core - Behavioral |home|ctnguyen|Works|pipelineCPU|src|core.vhd/ID_stage - DEC_phase - Behavioral</ClosedNode>
+         <ClosedNode>/core - Behavioral |home|ctnguyen|Works|pipelineCPU|src|core.vhd/IF_stage - IF_phase - Behavioral</ClosedNode>
+         <ClosedNode>/core - Behavioral |home|ctnguyen|Works|pipelineCPU|src|core.vhd/MEM_stage - MEM_phase - Behavioral</ClosedNode>
+         <ClosedNode>/core - Behavioral |home|ctnguyen|Works|pipelineCPU|src|core.vhd/STD_LOGIC_TEXTIO</ClosedNode>
          <ClosedNode>/core - Behavioral |home|ctnguyen|Works|pipelineCPU|src|processor.vhd/EX_stage - EX_phase - Behavioral</ClosedNode>
          <ClosedNode>/core - Behavioral |home|ctnguyen|Works|pipelineCPU|src|processor.vhd/ID_stage - DEC_phase - Behavioral</ClosedNode>
          <ClosedNode>/core - Behavioral |home|ctnguyen|Works|pipelineCPU|src|processor.vhd/IF_stage - IF_phase - Behavioral</ClosedNode>
@@ -40,13 +45,13 @@
          <ClosedNode>/tb_updated_reg_file - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_updated_reg_file.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>ID_stage - DEC_phase - Behavioral (/home/ctnguyen/Works/pipelineCPU/src/DEC_phase.vhd)</SelectedItem>
+         <SelectedItem>Inst_Mem - MEM_Instruction - Behavioral (/home/ctnguyen/Works/pipelineCPU/src/MEM_Instruction.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000023f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000023f0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>ID_stage - DEC_phase - Behavioral (/home/ctnguyen/Works/pipelineCPU/src/DEC_phase.vhd)</CurrentItem>
+      <CurrentItem>Inst_Mem - MEM_Instruction - Behavioral (/home/ctnguyen/Works/pipelineCPU/src/MEM_Instruction.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -109,7 +114,7 @@
       <CurrentItem></CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000001510000012001000000060100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_PACKAGE_BODY" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
@@ -144,6 +149,11 @@
          <ClosedNode>/EX_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|EX_phase.vhd/Br_addr_cal - sixteen_bits_adder - Behavioral</ClosedNode>
          <ClosedNode>/MEM_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|MEM_phase.vhd</ClosedNode>
          <ClosedNode>/STD_LOGIC_TEXTIO |home|ctnguyen|Works|pipelineCPU|src|std_logic_textio.vhd</ClosedNode>
+         <ClosedNode>/core - Behavioral |home|ctnguyen|Works|pipelineCPU|src|core.vhd</ClosedNode>
+         <ClosedNode>/core - Behavioral |home|ctnguyen|Works|pipelineCPU|src|core.vhd/EX_stage - EX_phase - Behavioral</ClosedNode>
+         <ClosedNode>/core - Behavioral |home|ctnguyen|Works|pipelineCPU|src|core.vhd/ID_stage - DEC_phase - Behavioral</ClosedNode>
+         <ClosedNode>/core - Behavioral |home|ctnguyen|Works|pipelineCPU|src|core.vhd/IF_stage - IF_phase - Behavioral</ClosedNode>
+         <ClosedNode>/core - Behavioral |home|ctnguyen|Works|pipelineCPU|src|core.vhd/MEM_stage - MEM_phase - Behavioral</ClosedNode>
          <ClosedNode>/fixedpoint_divider_module - Behavioral |home|ctnguyen|Works|pipelineCPU|src|fixedpoint_divider_module.vhd</ClosedNode>
          <ClosedNode>/fixedpoint_divider_module - Behavioral |home|ctnguyen|Works|pipelineCPU|src|fixedpoint_divider_module.vhd/one_complement_divisor - sixteen_bits_add_sub - Behavioral</ClosedNode>
          <ClosedNode>/fixedpoint_divider_module - Behavioral |home|ctnguyen|Works|pipelineCPU|src|fixedpoint_divider_module.vhd/two_complement_udiv_quotient - sixteen_bits_add_sub - Behavioral</ClosedNode>
@@ -160,6 +170,7 @@
          <ClosedNode>/tb_EX_phase - behavior |home|ctnguyen|Works|pipelineCPU|tb|tb_EX_phase.vhd/uut - EX_phase - Behavioral</ClosedNode>
          <ClosedNode>/tb_IF_phase - behavior |home|ctnguyen|Works|pipelineCPU|tb|tb_IF_phase.vhd</ClosedNode>
          <ClosedNode>/tb_MEM_data - behavior |home|ctnguyen|Works|pipelineCPU|tb|tb_MEM_data.vhd</ClosedNode>
+         <ClosedNode>/tb_MEM_phase - behavior |home|ctnguyen|Works|pipelineCPU|tb|tb_MEM_phase.vhd</ClosedNode>
          <ClosedNode>/tb_carry_look_ahead_block - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_carry_look_ahead_block.vhd</ClosedNode>
          <ClosedNode>/tb_fixedpoint_divider_module - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_fixedpoint_divider_module.vhd</ClosedNode>
          <ClosedNode>/tb_fixedpoint_multiplier_module - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_fixedpoint_multiplier_module.vhd</ClosedNode>
@@ -172,13 +183,13 @@
          <ClosedNode>/testbench - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_ALU_wrapper.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>uut - MEM_Instruction - Behavioral (/home/ctnguyen/Works/pipelineCPU/src/MEM_Instruction.vhd)</SelectedItem>
+         <SelectedItem>tb_MEM_Instruction - behavior (/home/ctnguyen/Works/pipelineCPU/tb/tb_MEM_Instruction.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >34</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >9</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002b0000000020000000000000000000000000200000064ffffffff000000810000000300000002000002b00000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000023f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000023f0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>uut - MEM_Instruction - Behavioral (/home/ctnguyen/Works/pipelineCPU/src/MEM_Instruction.vhd)</CurrentItem>
+      <CurrentItem>tb_MEM_Instruction - behavior (/home/ctnguyen/Works/pipelineCPU/tb/tb_MEM_Instruction.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -186,13 +197,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000130000000010000000100000000000000000000000064ffffffff000000810000000000000001000001300000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>

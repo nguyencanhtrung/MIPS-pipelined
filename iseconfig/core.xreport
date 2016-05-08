@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-05-08T11:34:44</DateModified>
+  <DateModified>2016-05-08T13:37:59</DateModified>
   <ModuleName>core</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/ctnguyen/Works/pipelineCPU/iseconfig/core.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/ctnguyen/Works/pipelineCPU</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/ctnguyen/Works/pipelineCPU/</ImplementationReportsDirectory>
   <DateInitialized>2016-05-08T10:49:29</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

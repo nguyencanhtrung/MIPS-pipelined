@@ -21,7 +21,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 --use IEEE.NUMERIC_STD.ALL;
 use work.all;
---use work.globalConst.all;
+use work.globalConst.all;
 
 entity core is
 	 Generic (	-- current pwd is in folder contain MEM_instruction.vhd
@@ -112,9 +112,9 @@ begin
 	
 	RegFileWr_en		<= MEM_WB_REG(40);
 	Reg_Des				<= MEM_WB_REG(4 downto 0);
-	write_data			<= ALU_result when dataSrc = fromALU
-								read_data  when dataSrc = fromMEM
-								else (others => '0');
+	write_data			<= ALU_result  when dataSrc = fromALU else
+								read_data 	when dataSrc = fromMEM
+								else (others => '0');  			-- means lessthan
 	
 end Behavioral;
 
