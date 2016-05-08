@@ -182,10 +182,12 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_EX_phase_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_IF_phase_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_IF_phase_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_MEM_Instruction_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_MEM_Instruction_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_MEM_Instruction_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_MEM_Instruction_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_MEM_data_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_MEM_data_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_MEM_data_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_MEM_data_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_carry_look_ahead_block_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_carry_look_ahead_block_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_carry_look_ahead_block_isim_beh.wdb"/>
@@ -202,21 +204,20 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1462167008" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1462167008">
+    <transform xil_pn:end_ts="1462665960" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1462665960">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1462167614" xil_pn:in_ck="344712591890058226" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1462167614">
+    <transform xil_pn:end_ts="1462666718" xil_pn:in_ck="7504927284085852553" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1462666718">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="src/ALU_wrapper.vhd"/>
       <outfile xil_pn:name="src/DEC_phase.vhd"/>
       <outfile xil_pn:name="src/EX_phase.vhd"/>
       <outfile xil_pn:name="src/IF_phase.vhd"/>
       <outfile xil_pn:name="src/MEM_Instruction.vhd"/>
+      <outfile xil_pn:name="src/MEM_data.vhd"/>
+      <outfile xil_pn:name="src/MEM_phase.vhd"/>
       <outfile xil_pn:name="src/alu_Logic.vhd"/>
       <outfile xil_pn:name="src/alu_Shift.vhd"/>
       <outfile xil_pn:name="src/carry_look_ahead_block.vhd"/>
@@ -234,30 +235,31 @@
       <outfile xil_pn:name="tb/tb_EX_phase.vhd"/>
       <outfile xil_pn:name="tb/tb_IF_phase.vhd"/>
       <outfile xil_pn:name="tb/tb_MEM_Instruction.vhd"/>
+      <outfile xil_pn:name="tb/tb_MEM_data.vhd"/>
       <outfile xil_pn:name="tb/tb_register_file.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1462167009" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7730689951342979339" xil_pn:start_ts="1462167009">
+    <transform xil_pn:end_ts="1462665960" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8227664783106397885" xil_pn:start_ts="1462665960">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1462167009" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1974388201019089047" xil_pn:start_ts="1462167009">
+    <transform xil_pn:end_ts="1462665960" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4711530760452197471" xil_pn:start_ts="1462665960">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1462167009" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="3602477495204757353" xil_pn:start_ts="1462167009">
+    <transform xil_pn:end_ts="1462665960" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-4081769080451310760" xil_pn:start_ts="1462665960">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
-    <transform xil_pn:end_ts="1462167614" xil_pn:in_ck="344712591890058226" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1462167614">
+    <transform xil_pn:end_ts="1462666718" xil_pn:in_ck="7504927284085852553" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1462666718">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="src/ALU_wrapper.vhd"/>
       <outfile xil_pn:name="src/DEC_phase.vhd"/>
       <outfile xil_pn:name="src/EX_phase.vhd"/>
       <outfile xil_pn:name="src/IF_phase.vhd"/>
       <outfile xil_pn:name="src/MEM_Instruction.vhd"/>
+      <outfile xil_pn:name="src/MEM_data.vhd"/>
+      <outfile xil_pn:name="src/MEM_phase.vhd"/>
       <outfile xil_pn:name="src/alu_Logic.vhd"/>
       <outfile xil_pn:name="src/alu_Shift.vhd"/>
       <outfile xil_pn:name="src/carry_look_ahead_block.vhd"/>
@@ -275,32 +277,27 @@
       <outfile xil_pn:name="tb/tb_EX_phase.vhd"/>
       <outfile xil_pn:name="tb/tb_IF_phase.vhd"/>
       <outfile xil_pn:name="tb/tb_MEM_Instruction.vhd"/>
+      <outfile xil_pn:name="tb/tb_MEM_data.vhd"/>
       <outfile xil_pn:name="tb/tb_register_file.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1462167617" xil_pn:in_ck="344712591890058226" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6974026619754998394" xil_pn:start_ts="1462167614">
+    <transform xil_pn:end_ts="1462666721" xil_pn:in_ck="7504927284085852553" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="695701154913834518" xil_pn:start_ts="1462666718">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="tb_MEM_Instruction_beh.prj"/>
-      <outfile xil_pn:name="tb_MEM_Instruction_isim_beh.exe"/>
+      <outfile xil_pn:name="tb_MEM_data_beh.prj"/>
+      <outfile xil_pn:name="tb_MEM_data_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1462167618" xil_pn:in_ck="3319850855803980009" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-9114894195293733709" xil_pn:start_ts="1462167617">
+    <transform xil_pn:end_ts="1462666721" xil_pn:in_ck="3139237414761378277" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2750309283943080669" xil_pn:start_ts="1462666721">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="tb_MEM_Instruction_isim_beh.wdb"/>
+      <outfile xil_pn:name="tb_MEM_data_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1462166956" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1462166956">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -310,7 +307,6 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
   </transforms>
 

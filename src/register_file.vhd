@@ -43,15 +43,8 @@ type memory is array (0 to REG_FILE_SIZE - 1) of std_logic_vector(REG_WIDTH - 1 
 signal regFile : memory;
 begin
 	-- Asynchronous read
-read_rs_process: process (read_rs_index)		
-	begin
-		read_data_1	<= regFile(to_integer(unsigned(read_rs_index)));
-end process read_rs_process;
-
-read_rt_process: process (read_rt_index)		
-	begin
-		read_data_2 <= regFile(to_integer(unsigned(read_rt_index)));
-end process read_rt_process;
+	read_data_1	<= regFile(to_integer(unsigned(read_rs_index)));
+	read_data_2 <= regFile(to_integer(unsigned(read_rt_index)));
 	
 	-- Synchronous write
 write_process: process (clk, rst)

@@ -1,1 +1,2 @@
-work	"src/MEM_Instruction.vhd"
+work	"src/MEM_data.vhd"
+work	"src/globalConst.vhd"

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-05-01T23:37:08</DateModified>
+  <DateModified>2016-05-07T16:53:24</DateModified>
   <ModuleName>MEM_phase</ModuleName>
-  <SummaryTimeStamp>2016-05-01T23:10:24</SummaryTimeStamp>
-  <SavedFilePath>/home/ctnguyen/Works/pipelineCPU/iseconfig/MEM_Instruction.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/ctnguyen/Works/pipelineCPU</ImplementationReportsDirectory>
-  <DateInitialized>2016-05-01T23:10:31</DateInitialized>
+  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SavedFilePath>/home/ctnguyen/Works/pipelineCPU/iseconfig/MEM_phase.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/ctnguyen/Works/pipelineCPU/</ImplementationReportsDirectory>
+  <DateInitialized>2016-05-04T12:28:40</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

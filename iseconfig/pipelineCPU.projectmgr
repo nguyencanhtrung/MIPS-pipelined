@@ -16,6 +16,8 @@
          <ClosedNode>/EX_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|EX_phase.vhd/ALU - ALU_wrapper - Behavioral/ALU_adder_subtracter - sixteen_bits_add_sub - Behavioral/adder - sixteen_bits_adder - Behavioral</ClosedNode>
          <ClosedNode>/EX_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|EX_phase.vhd/Br_addr_cal - sixteen_bits_adder - Behavioral</ClosedNode>
          <ClosedNode>/IF_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|IF_phase.vhd</ClosedNode>
+         <ClosedNode>/MEM_Instruction - Behavioral |home|ctnguyen|Works|pipelineCPU|src|MEM_Instruction.vhd</ClosedNode>
+         <ClosedNode>/MEM_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|MEM_phase.vhd/STD_LOGIC_TEXTIO</ClosedNode>
          <ClosedNode>/decode_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|decode_phase.vhd</ClosedNode>
          <ClosedNode>/fixedpoint_divider_module - Behavioral |home|ctnguyen|Works|pipelineCPU|src|fixedpoint_divider_module.vhd</ClosedNode>
          <ClosedNode>/fixedpoint_multiplier_module - Behavioral |home|ctnguyen|Works|pipelineCPU|src|fixedpoint_multiplier_module.vhd</ClosedNode>
@@ -34,15 +36,58 @@
          <ClosedNode>/tb_updated_reg_file - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_updated_reg_file.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>MEM_Instruction - Behavioral (/home/ctnguyen/Works/pipelineCPU/src/MEM_Instruction.vhd)</SelectedItem>
+         <SelectedItem>Mem_data - MEM_data - Behavioral (/home/ctnguyen/Works/pipelineCPU/src/MEM_data.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000023f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000023f0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>MEM_Instruction - Behavioral (/home/ctnguyen/Works/pipelineCPU/src/MEM_Instruction.vhd)</CurrentItem>
+      <CurrentItem>Mem_data - MEM_data - Behavioral (/home/ctnguyen/Works/pipelineCPU/src/MEM_data.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000130000000010000000100000000000000000000000064ffffffff000000810000000000000001000001300000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>std_logic_textio.vhd</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000024c000000040101000100000000000000000000000064ffffffff000000810000000000000004000000d60000000100000000000000290000000100000000000000840000000100000000000000c90000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>std_logic_textio.vhd</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>fixedpoint_multiplier_module.vhd</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000115000000010001000100000000000000000000000064ffffffff000000810000000000000001000001150000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>fixedpoint_multiplier_module.vhd</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
@@ -58,49 +103,6 @@
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000130000000010000000100000000000000000000000064ffffffff000000810000000000000001000001300000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
-   </ItemView>
-   <ItemView guiview="File" >
-      <ClosedNodes>
-         <ClosedNodesVersion>1</ClosedNodesVersion>
-      </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem>register_file.vhd</SelectedItem>
-      </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
-      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000208000000040101000100000000000000000000000064ffffffff000000810000000000000004000000d60000000100000000000000290000000100000000000000840000000100000000000000850000000100000000</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>register_file.vhd</CurrentItem>
-   </ItemView>
-   <ItemView guiview="Library" >
-      <ClosedNodes>
-         <ClosedNodesVersion>1</ClosedNodesVersion>
-      </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem>globalConst.vhd</SelectedItem>
-      </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
-      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000120000000010001000100000000000000000000000064ffffffff000000810000000000000001000001200000000100000000</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>globalConst.vhd</CurrentItem>
-   </ItemView>
-   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
-      <ClosedNodes>
-         <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>Configure Target Device</ClosedNode>
-         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
-         <ClosedNode>Implement Design</ClosedNode>
-         <ClosedNode>User Constraints</ClosedNode>
-      </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem>Synthesize - XST</SelectedItem>
-      </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >4</ScrollbarPosition>
-      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000120000000010000000100000000000000000000000064ffffffff000000810000000000000001000001200000000100000000</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Synthesize - XST</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000001510000012001000000060100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
@@ -136,6 +138,8 @@
          <ClosedNode>/DEC_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|DEC_phase.vhd</ClosedNode>
          <ClosedNode>/EX_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|EX_phase.vhd/ALU - ALU_wrapper - Behavioral/ALU_adder_subtracter - sixteen_bits_add_sub - Behavioral</ClosedNode>
          <ClosedNode>/EX_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|EX_phase.vhd/Br_addr_cal - sixteen_bits_adder - Behavioral</ClosedNode>
+         <ClosedNode>/MEM_phase - Behavioral |home|ctnguyen|Works|pipelineCPU|src|MEM_phase.vhd</ClosedNode>
+         <ClosedNode>/STD_LOGIC_TEXTIO |home|ctnguyen|Works|pipelineCPU|src|std_logic_textio.vhd</ClosedNode>
          <ClosedNode>/fixedpoint_divider_module - Behavioral |home|ctnguyen|Works|pipelineCPU|src|fixedpoint_divider_module.vhd</ClosedNode>
          <ClosedNode>/fixedpoint_divider_module - Behavioral |home|ctnguyen|Works|pipelineCPU|src|fixedpoint_divider_module.vhd/one_complement_divisor - sixteen_bits_add_sub - Behavioral</ClosedNode>
          <ClosedNode>/fixedpoint_divider_module - Behavioral |home|ctnguyen|Works|pipelineCPU|src|fixedpoint_divider_module.vhd/two_complement_udiv_quotient - sixteen_bits_add_sub - Behavioral</ClosedNode>
@@ -150,6 +154,8 @@
          <ClosedNode>/tb_DEC_phase - behavior |home|ctnguyen|Works|pipelineCPU|tb|tb_DEC_phase.vhd</ClosedNode>
          <ClosedNode>/tb_EX_phase - behavior |home|ctnguyen|Works|pipelineCPU|tb|tb_EX_phase.vhd</ClosedNode>
          <ClosedNode>/tb_EX_phase - behavior |home|ctnguyen|Works|pipelineCPU|tb|tb_EX_phase.vhd/uut - EX_phase - Behavioral</ClosedNode>
+         <ClosedNode>/tb_IF_phase - behavior |home|ctnguyen|Works|pipelineCPU|tb|tb_IF_phase.vhd</ClosedNode>
+         <ClosedNode>/tb_MEM_Instruction - behavior |home|ctnguyen|Works|pipelineCPU|tb|tb_MEM_Instruction.vhd</ClosedNode>
          <ClosedNode>/tb_carry_look_ahead_block - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_carry_look_ahead_block.vhd</ClosedNode>
          <ClosedNode>/tb_fixedpoint_divider_module - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_fixedpoint_divider_module.vhd</ClosedNode>
          <ClosedNode>/tb_fixedpoint_multiplier_module - behavior |home|ctnguyen|Works|pipelineCPU|src|tb_fixedpoint_multiplier_module.vhd</ClosedNode>
@@ -164,9 +170,9 @@
       <SelectedItems>
          <SelectedItem>tb_IF_phase - behavior (/home/ctnguyen/Works/pipelineCPU/tb/tb_IF_phase.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >5</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000287000000020000000000000000000000000200000064ffffffff000000810000000300000002000002870000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000023f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000023f0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>tb_IF_phase - behavior (/home/ctnguyen/Works/pipelineCPU/tb/tb_IF_phase.vhd)</CurrentItem>
    </ItemView>
@@ -176,25 +182,52 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000130000000010000000100000000000000000000000064ffffffff000000810000000000000001000001300000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000130000000010000000100000000000000000000000064ffffffff000000810000000000000001000001300000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000130000000010000000100000000000000000000000064ffffffff000000810000000000000001000001300000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_PACKAGE_DECL" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000130000000010000000100000000000000000000000064ffffffff000000810000000000000001000001300000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
    </ItemView>
 </Project>
