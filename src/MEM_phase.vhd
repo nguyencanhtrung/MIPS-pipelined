@@ -7,13 +7,26 @@
 -- Target Devices: General Platform
 -- Tool versions:  Xilinx ISE 14.7
 -- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
+		--Pipeline register EX_MEM_Reg
+--		4  - 0 	:	RegDes (rt or rd)
+--		20 - 5 	: Read Data 2 (rt) write to mem in sw:   Mem(rs + Imm) = rt
+--		36 - 21	: ALU result	
+--		37		 	: Zero
+--		38			: Less than
+--		54 - 39	: Branch target addr
+--		55		 	: MEM- Mem Write enable  (store)
+--		56		 	: MEM- Mem Read Enable	(load)
+--		57		 	: MEM- Branch indicator
+--		59 - 58 	: WB - Data source that write to RegFile(from ALU result or from Memory(Load))
+--		60		 	: WB - RegFile Write enable	
+--====================================================================
+		--Pipeline register MEM_WB_Reg
+--		4  - 0 	:	RegDes (rt or rd)
+--		20 - 5	: 	ALU_result
+--		21			: 	lessthan
+--		37 - 22	:	Data from memory
+--		39 - 38	: 	DataSrc
+--		40			:  RegFileWrE
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -59,10 +72,10 @@ begin
 	branch_indicator	<= EX_MEM_REG(57);
 	dataSrc				<= EX_MEM_REG(59 downto 58);
 	RegFileWr_en		<= EX_MEM_REG(60);
-	
+
 		-- Data memory
 	Mem_data : entity work.MEM_data
-		Generic map ( size	=> 100)
+		Generic map ( size	=> 512) 		-- 1 KB
 		Port map( 
 				clk 			 => clk,
 				write_en 	 => write_en,
@@ -72,8 +85,22 @@ begin
 				read_data 	 => read_data);
 	-- Branch prediction
 	pcSrc	<= zero AND branch_indicator;   -- checking beq and bne
-				
-	-- Update MEM_WB_REG
 
+	-- Update MEM_WB_REG
+	update_MEM_WB_REG: process(clk, rst)
+	begin
+		if rising_edge(clk) then
+			if rst = '1' then
+				MEM_WB_REG					<= (others => '0');
+			else
+				MEM_WB_REG(4 downto 0)	<= RegDes;
+				MEM_WB_REG(20 downto 5)	<= ALU_result;		-- data is calculated in EXphase
+				MEM_WB_REG(21)				<= lessthan;		
+				MEM_WB_REG(37 downto 22)<= read_data;		-- data read from MEM
+				MEM_WB_REG(39 downto 38)<= dataSrc;			-- either: ALU, MEM, lessthan
+				MEM_WB_REG(40)				<= RegFileWr_en;
+			end if;
+		end if;
+	end process;
 end Behavioral;
 

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ctnguyen/Works/pipelineCPU/MEM_phase.xst" -ofn "/home/ctnguyen/Works/pipelineCPU/MEM_phase.syr" 
