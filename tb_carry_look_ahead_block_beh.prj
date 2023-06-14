@@ -1,2 +1,0 @@
-vhdl work "src/carry_look_ahead_block.vhd"
-vhdl work "src/tb_carry_look_ahead_block.vhd"

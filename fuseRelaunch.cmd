@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "secureip" -o "/home/ctnguyen/Works/pipelineCPU/tb_MEM_Instruction_isim_beh.exe" -prj "/home/ctnguyen/Works/pipelineCPU/tb_MEM_Instruction_beh.prj" "work.tb_MEM_Instruction" 

@@ -1,4 +1,0 @@
-vhdl work "src/globalConst.vhd"
-vhdl work "src/four_bits_CLA_adder.vhd"
-vhdl work "src/carry_look_ahead_block.vhd"
-vhdl work "src/sixteen_bits_adder.vhd"

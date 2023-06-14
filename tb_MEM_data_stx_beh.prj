@@ -1,3 +1,0 @@
-vhdl isim_temp "src/globalConst.vhd"
-vhdl isim_temp "src/MEM_data.vhd"
-vhdl isim_temp "tb/tb_MEM_data.vhd"

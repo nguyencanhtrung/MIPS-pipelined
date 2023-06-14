@@ -1,6 +1,0 @@
-vhdl isim_temp "src/four_bits_CLA_adder.vhd"
-vhdl isim_temp "src/carry_look_ahead_block.vhd"
-vhdl isim_temp "src/sixteen_bits_adder.vhd"
-vhdl isim_temp "src/globalConst.vhd"
-vhdl isim_temp "src/IF_phase.vhd"
-vhdl isim_temp "tb/tb_IF_phase.vhd"

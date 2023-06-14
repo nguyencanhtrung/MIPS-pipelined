@@ -1,2 +1,0 @@
-vhdl isim_temp "src/MEM_Instruction.vhd"
-vhdl isim_temp "tb/tb_MEM_Instruction.vhd"
